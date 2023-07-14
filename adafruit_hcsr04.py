@@ -27,6 +27,7 @@ library.
   - Mike Mabey
   - Jerry Needell - modified to add timeout while waiting for echo (2/26/2018)
   - ladyada - compatible with `distance` property standard, renaming, Pi compat
+  - WIZnet HK MARK - Modified into a single IO to communicate with RUS04 
 """
 
 import time
@@ -49,7 +50,6 @@ except (ImportError, NotImplementedError):
 
 __version__ = "0.0.0+auto.0"
 __repo__ = "https://github.com/adafruit/Adafruit_CircuitPython_HCSR04.git"
-
 
 class HCSR04:
     """Control a HC-SR04 ultrasonic range sensor.
